@@ -36,7 +36,7 @@ The project uses the Open-Meteo API to fetch daily maximum temperature data for 
 Key Script: open_meteo.py
 
 # 🛠️ Tools Used
-- Python: Data generation (pandas, numpy).
+- Python: Data generation (pandas, numpy, requests).
 - SQL: Data transformation and analysis (SQLite).
 - Microsoft Excel: Pivot tables, slicers, and initial dashboard.
 - Power BI: Advanced interactive dashboard with slicers and KPI gauges.
@@ -64,7 +64,7 @@ Note: Dashboards require manual refresh after data updates.
 - Growth trends by region (first vs. last day).
 
 # 📊 Power BI Dashboard
-Built an interactive Power BI dashboard to analyze energy usage across Melbourne, Sydney, Brisbane, and Perth (Jan-Jun 2024).
+Built an interactive Power BI dashboard to analyze energy usage across Melbourne, Sydney, Brisbane, and Perth (April-May 2025).
 
 ![Default View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Default%20View.png?raw=true)
 ![Filtered View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Filtered%20View.png?raw=true)
