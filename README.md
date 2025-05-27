@@ -67,12 +67,14 @@ Features:
 - Total energy consumption (679K kWh).
 - Average kWh per device and total consumption bar charts.
 - Uptime (97.51%) and error rate (2.53%) gauges with targets (95% for uptime, 1% for error rate).
+
 Interactivity:
 - Region slicer (dropdown) to filter by Melbourne, Sydney, Brisbane, or Perth.
 - Date range slicer to filter by time period.
+
 Insights:
 - Uptime consistently above the 95% target.
-- Error rates below the 1% target.
+- Error rates above the 1% target.
 - Melbourne has the highest energy usage (205K kWh) and kWh per device (35).
 
 ![Default View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Default%20View.png?raw=true)
@@ -80,7 +82,7 @@ Insights:
 
 [Power BI File: energy_dashboard.pbix]
 
-# 🔮 Possible Next Steps with Power Automate
+# 🔮 Possible Next Step with Power Automate
 
 - Automate Data Sync with Power Automate:
   - Create a Power Automate flow to automatically sync data updates:
