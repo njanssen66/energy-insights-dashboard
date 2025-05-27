@@ -79,3 +79,11 @@ Insights:
 ![Filtered View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Filtered%20View.png?raw=true)
 
 [Power BI File: energy_dashboard.pbix]
+
+# 🔮 Possible Next Steps with Power Automate
+
+- Automate Data Sync with Power Automate:
+  - Create a Power Automate flow to automatically sync data updates:
+    - Trigger: Detect when energy_usage.csv is updated in a cloud storage service like OneDrive.
+    - Actions: Refresh the Power BI dataset and notify stakeholders via email or Microsoft Teams with a link to the updated dashboard.
+    - This would streamline the data refresh process, ensuring stakeholders always have access to the latest insights without manual intervention.
