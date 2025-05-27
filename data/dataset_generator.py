@@ -8,7 +8,7 @@ random.seed(42)
 np.random.seed(42)
 
 regions = ['Melbourne', 'Sydney', 'Brisbane', 'Perth']
-start_date = datetime.strptime('2024-01-01', '%Y-%m-%d')
+start_date = datetime.strptime('2025-03-18', '%Y-%m-%d')
 end_date = start_date + timedelta(days=180)  # ~6 months of data
 dates = pd.date_range(start=start_date, end=end_date)
 

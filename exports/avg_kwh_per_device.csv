@@ -1,5 +1,5 @@
-region,avg_kWh_per_device
-Melbourne,34.65
-Perth,26.49
-Brisbane,25.03
-Sydney,21.52
+region,avg_kWh_per_device,avg_temperature
+Melbourne,35.1,21.51
+Perth,26.43,27.5
+Brisbane,25.15,25.72
+Sydney,21.37,22.27

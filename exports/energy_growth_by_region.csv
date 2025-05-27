@@ -1,5 +1,5 @@
-region,start_kWh,end_kWh,percent_growth
-Sydney,731,902,23.39
-Melbourne,1152,1266,9.9
-Brisbane,909,977,7.48
-Perth,896,805,-10.16
+region,start_kWh,end_kWh,percent_growth,start_temperature,end_temperature
+Sydney,731,760,3.97,24.2,17.0
+Brisbane,909,898,-1.21,25.4,30.4
+Perth,896,877,-2.12,32.3,21.1
+Melbourne,1152,1068,-7.29,24.3,15.1

@@ -1,5 +1,5 @@
-region,total_energy_kWh
-Melbourne,205299
-Brisbane,168480
-Perth,157655
-Sydney,147422
+region,total_energy_kWh,avg_temperature
+Melbourne,80514,21.51
+Brisbane,66421,25.72
+Perth,61498,27.5
+Sydney,57303,22.27
