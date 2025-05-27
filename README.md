@@ -75,6 +75,7 @@ Insights:
 - Error rates below the 1% target.
 - Melbourne has the highest energy usage (205K kWh) and kWh per device (35).
 
-[Screenshots: Default View | Filtered View]
+![Default View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Default%20View.png?raw=true)
+![Filtered View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Filtered%20View.png?raw=true)
 
 [Power BI File: energy_dashboard.pbix]
