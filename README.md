@@ -18,12 +18,12 @@ A full analytics pipeline:
 - Integrate external data sources (temperature data from open-meteo.com).
 
 # 📊 Data Description
-Simulated Jan–Jun 2024 energy usage across Melbourne, Sydney, Brisbane, and Perth.
+Simulated April-May 2025 energy usage across Melbourne, Sydney, Brisbane, and Perth.
 
 |Column|Description|
 |---|---|
 |region|Geographic location (Melbourne, Sydney, Brisbane, Perth)|
-|date|Date of data recording (Jan 2024 to Jun 2024)|
+|date|Date of data recording (April 2025 to May 2025)|
 |kWh|Total energy consumed (in kWh)|
 |devices|Number of active devices in region|
 |uptime|Percent of time the system was online (%)|
