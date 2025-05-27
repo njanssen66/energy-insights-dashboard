@@ -16,13 +16,14 @@ This project demonstrates a complete business analytics pipeline:
 # 📊 Data Description
 The dataset energy_usage.csv includes simulated energy usage metrics over time (Jan-Jun 2024) across four Australian regions: Melbourne, Sydney, Brisbane, and Perth.
 
-"Column","Description"
-"region","Geographic location (Melbourne, Sydney, Brisbane, Perth)"
-"date","Date of data recording (Jan 2024 to Jun 2024)"
-"kWh","Total energy consumed (in kWh)"
-"devices","Number of active devices in region"
-"uptime","Percent of time the system was online (%)"
-"error_rate","Percent of operations that triggered errors (%)"
+|Column|Description|
+|---|---|
+|region|Geographic location (Melbourne, Sydney, Brisbane, Perth)|
+|date|Date of data recording (Jan 2024 to Jun 2024)|
+|kWh|Total energy consumed (in kWh)|
+|devices|Number of active devices in region|
+|uptime|Percent of time the system was online (%)|
+|error_rate|Percent of operations that triggered errors (%)|
 
 # 🛠️ Tools Used
 - Python: Data generation (pandas, numpy).
@@ -32,11 +33,11 @@ The dataset energy_usage.csv includes simulated energy usage metrics over time (
 - GitHub: Version control and project documentation.
 
 # 📂 Project Structure
-/data # Data generation script and CSV file
-/db # SQLite DB and creation script
-/exports # Automated CSV exports from SQL queries
-/powerbi-dashboard # Power BI dashboard file and screenshots
-energy_dashboard.xlsx # Excel dashboard file
+- /data # Data generation script and CSV file
+- /db # SQLite DB and creation script
+- /exports # Automated CSV exports from SQL queries
+- /powerbi-dashboard # Power BI dashboard file and screenshots
+- energy_dashboard.xlsx # Excel dashboard file
 
 # 🚀 How to Run
 1. Generate Data:
@@ -58,14 +59,6 @@ The Excel and Power BI dashboards do not automatically sync with the CSV exports
 - Top 5 energy usage days per region using window functions.
 - Growth trends by region (first vs. last day).
 
-# 📈 Excel Dashboard
-The Excel file energy_dashboard.xlsx includes:
-
-- Pivot tables for regional energy trends.
-- Slicers for filtering by region and date.
-- Charts visualizing energy and device data.
-- Conditional formatting to highlight anomalies.
-
 # 📊 Power BI Dashboard
 Built an interactive Power BI dashboard to analyze energy usage across Melbourne, Sydney, Brisbane, and Perth (Jan-Jun 2024).
 
@@ -73,13 +66,13 @@ Features:
 - Time-series trends of energy usage by region.
 - Total energy consumption (679K kWh).
 - Average kWh per device and total consumption bar charts.
-- Uptime (97.51%) and error rate (2.53%) gauges with targets (95% for uptime, 3% for error rate).
-- Interactivity:
+- Uptime (97.51%) and error rate (2.53%) gauges with targets (95% for uptime, 1% for error rate).
+Interactivity:
 - Region slicer (dropdown) to filter by Melbourne, Sydney, Brisbane, or Perth.
 - Date range slicer to filter by time period.
-- Insights:
+Insights:
 - Uptime consistently above the 95% target.
-- Error rates below the 3% target.
+- Error rates below the 1% target.
 - Melbourne has the highest energy usage (205K kWh) and kWh per device (35).
 
 [Screenshots: Default View | Filtered View]
