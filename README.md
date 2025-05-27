@@ -8,12 +8,14 @@ A full analytics pipeline:
 - Synthetic data generation (Python).
 - SQL transformations & analysis.
 - Dashboards in Excel & Power BI.
+- Temperature data from open-meteo.com.
 
 # 🧠 Project Goals
 
 - Practice advanced SQL (joins, window functions).
 - Build dashboards for stakeholder insights.
 - Mimic Tesla-style analytics workflows.
+- Integrate external data sources (temperature data from open-meteo.com).
 
 # 📊 Data Description
 Simulated Jan–Jun 2024 energy usage across Melbourne, Sydney, Brisbane, and Perth.
@@ -26,6 +28,12 @@ Simulated Jan–Jun 2024 energy usage across Melbourne, Sydney, Brisbane, and Pe
 |devices|Number of active devices in region|
 |uptime|Percent of time the system was online (%)|
 |error_rate|Percent of operations that triggered errors (%)|
+|temperature_2m_max|Maximum temperature in the region (°C), via open-meteo.com|
+
+# 🌤️ Weather Data Integration
+The project uses the Open-Meteo API to fetch daily maximum temperature data for all four cities. This data helps analyze how external temperatures correlate with energy usage.
+
+Key Script: open_meteo.py
 
 # 🛠️ Tools Used
 - Python: Data generation (pandas, numpy).
@@ -39,10 +47,11 @@ Simulated Jan–Jun 2024 energy usage across Melbourne, Sydney, Brisbane, and Pe
 - /db – SQLite DB & script
 - /exports – SQL export outputs
 - /dashboards/powerbi-dashboard.pbix – Power BI dashboard
-- /dashboards/Data Overview.xlsx – Excel dashboard
+- /dashboards/data_overview.xlsx – Excel dashboard
 
 # 🚀 How to Use
 - Run dataset_generator.py to create CSV
+- Run open_meteo.py to get temperature data (from open-meteo.com)
 - Use db_creator.py + SQL scripts to build DB & export results
 - Open energy_dashboard.xlsx or energy_dashboard.pbix to explore dashboards
 
@@ -57,18 +66,8 @@ Note: Dashboards require manual refresh after data updates.
 # 📊 Power BI Dashboard
 Built an interactive Power BI dashboard to analyze energy usage across Melbourne, Sydney, Brisbane, and Perth (Jan-Jun 2024).
 
-Interactive dashboard includes:
-
-- Energy trends by region
-- 679K kWh total consumption
-- Uptime (97.5%) vs. 95% target
-- Error rate (2.53%) above 1% target
-- Slicers for region and date
-
 ![Default View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Default%20View.png?raw=true)
 ![Filtered View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Filtered%20View.png?raw=true)
-
-[Power BI File: energy_dashboard.pbix]
 
 # 🔄 Next Step: Power Automate
 Automate CSV updates:
