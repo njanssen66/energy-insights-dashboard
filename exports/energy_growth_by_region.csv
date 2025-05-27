@@ -1,0 +1,5 @@
+region,start_kWh,end_kWh,percent_growth
+Sydney,731,902,23.39
+Melbourne,1152,1266,9.9
+Brisbane,909,977,7.48
+Perth,896,805,-10.16
