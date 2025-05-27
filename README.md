@@ -1,20 +1,22 @@
 # ⚡ Energy Insights Dashboard
 
-A simulated data analysis project exploring regional energy usage trends across Australia, built as preparation for a Data Analyst role at Tesla Energy APAC (Req. ID 237346).
+Simulated analysis of regional energy usage across Australia, built to prep for a Data Analyst role at Tesla Energy APAC.
 
-This project demonstrates a complete business analytics pipeline:
+# 🎯 Project Overview
+A full analytics pipeline:
 
-- Synthetic data generation using Python.
-- SQL-based data transformation and advanced queries.
-- Interactive visualizations and reporting using Excel and Power BI.
+- Synthetic data generation (Python).
+- SQL transformations & analysis.
+- Dashboards in Excel & Power BI.
 
 # 🧠 Project Goals
-- Practice advanced SQL (joins, window functions, aggregates).
-- Build interactive dashboards for stakeholder insights using Excel and Power BI.
-- Simulate a real-world energy analytics workflow relevant to Tesla’s operations.
+
+- Practice advanced SQL (joins, window functions).
+- Build dashboards for stakeholder insights.
+- Mimic Tesla-style analytics workflows.
 
 # 📊 Data Description
-The dataset energy_usage.csv includes simulated energy usage metrics over time (Jan-Jun 2024) across four Australian regions: Melbourne, Sydney, Brisbane, and Perth.
+Simulated Jan–Jun 2024 energy usage across Melbourne, Sydney, Brisbane, and Perth.
 
 |Column|Description|
 |---|---|
@@ -33,25 +35,18 @@ The dataset energy_usage.csv includes simulated energy usage metrics over time (
 - GitHub: Version control and project documentation.
 
 # 📂 Project Structure
-- /data # Data generation script and CSV file
-- /db # SQLite DB and creation script
-- /exports # Automated CSV exports from SQL queries
-- /powerbi-dashboard # Power BI dashboard file and screenshots
-- energy_dashboard.xlsx # Excel dashboard file
+- /data – Generator script & CSV
+- /db – SQLite DB & script
+- /exports – SQL export outputs
+- /dashboards/powerbi-dashboard.pbix – Power BI dashboard
+- /dashboards/Data Overview.xlsx – Excel dashboard
 
-# 🚀 How to Run
-1. Generate Data:
- - Run data/dataset_generator.py to create the synthetic dataset energy_usage.csv.
-2. Transform Data with SQL:
- - Use db/db_creator.py to create and populate the SQLite database.
- - Execute SQL queries from energy_queries.sql and export results using export_from_sql_file.py.
-3. Visualize in Excel:
- - Open energy_dashboard.xlsx for interactive reporting with pivot tables and slicers.
-4. Visualize in Power BI:
-Open /powerbi-dashboard/energy_dashboard.pbix to explore the interactive Power BI dashboard.
+# 🚀 How to Use
+- Run dataset_generator.py to create CSV
+- Use db_creator.py + SQL scripts to build DB & export results
+- Open energy_dashboard.xlsx or energy_dashboard.pbix to explore dashboards
 
-# ⚠️ Important Note on Data Refresh
-The Excel and Power BI dashboards do not automatically sync with the CSV exports. If you regenerate data or rerun SQL exports, manually refresh the data source in Excel or Power BI to reflect the latest information.
+Note: Dashboards require manual refresh after data updates.
 
 # 🔍 SQL Analysis Highlights
 - Regional breakdowns of energy consumption.
@@ -62,30 +57,22 @@ The Excel and Power BI dashboards do not automatically sync with the CSV exports
 # 📊 Power BI Dashboard
 Built an interactive Power BI dashboard to analyze energy usage across Melbourne, Sydney, Brisbane, and Perth (Jan-Jun 2024).
 
-Features:
-- Time-series trends of energy usage by region.
-- Total energy consumption (679K kWh).
-- Average kWh per device and total consumption bar charts.
-- Uptime (97.51%) and error rate (2.53%) gauges with targets (95% for uptime, 1% for error rate).
+Interactive dashboard includes:
 
-Interactivity:
-- Region slicer (dropdown) to filter by Melbourne, Sydney, Brisbane, or Perth.
-- Date range slicer to filter by time period.
-
-Insights:
-- Uptime consistently above the 95% target.
-- Error rates above the 1% target.
-- Melbourne has the highest energy usage (205K kWh) and kWh per device (35).
+- Energy trends by region
+- 679K kWh total consumption
+- Uptime (97.5%) vs. 95% target
+- Error rate (2.53%) above 1% target
+- Slicers for region and date
 
 ![Default View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Default%20View.png?raw=true)
 ![Filtered View](https://github.com/njanssen66/energy-insights-dashboard/blob/main/Filtered%20View.png?raw=true)
 
 [Power BI File: energy_dashboard.pbix]
 
-# 🔮 Possible Next Step with Power Automate
+# 🔄 Next Step: Power Automate
+Automate CSV updates:
 
-- Automate Data Sync with Power Automate:
-  - Create a Power Automate flow to automatically sync data updates:
-    - Trigger: Detect when energy_usage.csv is updated in a cloud storage service like OneDrive.
-    - Actions: Refresh the Power BI dataset and notify stakeholders via email or Microsoft Teams with a link to the updated dashboard.
-    - This would streamline the data refresh process, ensuring stakeholders always have access to the latest insights without manual intervention.
+- Trigger: File change in OneDrive
+- Action: Refresh Power BI
+- Result: Always-current insights, no manual refresh needed
