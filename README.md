@@ -1,6 +1,6 @@
 # ⚡ Energy Insights Dashboard
 
-Simulated analysis of regional energy usage across Australia, built to prep for a Data Analyst role at Tesla Energy APAC.
+Simulated analysis of regional energy usage across Australia, built to prep for a Data Analyst role.
 
 # 🎯 Project Overview
 A full analytics pipeline:
@@ -14,7 +14,6 @@ A full analytics pipeline:
 
 - Practice advanced SQL (joins, window functions).
 - Build dashboards for stakeholder insights.
-- Mimic Tesla-style analytics workflows.
 - Integrate external data sources (temperature data from open-meteo.com).
 
 # 📊 Data Description
